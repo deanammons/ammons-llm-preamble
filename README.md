@@ -8,7 +8,7 @@
 
 This repository contains my research preprint, its editable source, and the reproduction materials for its mathematical checks and small encounter-time pilot. The paper defines behavioral influence under a specified content intervention and proposes an explicit model of the resulting semantic response change.
 
-Read the paper: [Ammons LLM Preamble](./Ammons_LLM_Preamble.pdf)
+Read the paper: [Ammons LLM Preamble](./Ammons_LLM_Preamble.pdf) [Ammons LLM Preamble External 10.5281/zenodo.24177478](https://zenodo.org/records/24177478)
 
 Inspect the reproduction material: [source directory](./source/)
 
