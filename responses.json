@@ -1,0 +1,172 @@
+[
+  {
+    "task_name": "p01",
+    "response": "{\"direct\":0,\"nested\":3}",
+    "position": 1,
+    "domain": "D01",
+    "arm": "work"
+  },
+  {
+    "task_name": "p02",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 2,
+    "domain": "D01",
+    "arm": "control"
+  },
+  {
+    "task_name": "p03",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 3,
+    "domain": "D02",
+    "arm": "control"
+  },
+  {
+    "task_name": "p04",
+    "response": "{\"direct\":8,\"nested\":10}",
+    "position": 4,
+    "domain": "D02",
+    "arm": "work"
+  },
+  {
+    "task_name": "p05",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 5,
+    "domain": "D05",
+    "arm": "control"
+  },
+  {
+    "task_name": "p06",
+    "response": "{\"direct\":9,\"nested\":0}",
+    "position": 6,
+    "domain": "D05",
+    "arm": "work"
+  },
+  {
+    "task_name": "p07",
+    "response": "{\"direct\":3,\"nested\":6}",
+    "position": 7,
+    "domain": "D03",
+    "arm": "work"
+  },
+  {
+    "task_name": "p08",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 8,
+    "domain": "D03",
+    "arm": "control"
+  },
+  {
+    "task_name": "p09",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 9,
+    "domain": "D12",
+    "arm": "control"
+  },
+  {
+    "task_name": "p10",
+    "response": "{\"direct\":0,\"nested\":2}",
+    "position": 10,
+    "domain": "D12",
+    "arm": "work"
+  },
+  {
+    "task_name": "p11",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 11,
+    "domain": "D09",
+    "arm": "control"
+  },
+  {
+    "task_name": "p12",
+    "response": "{\"direct\":4,\"nested\":7}",
+    "position": 12,
+    "domain": "D09",
+    "arm": "work"
+  },
+  {
+    "task_name": "p13",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 13,
+    "domain": "D10",
+    "arm": "control"
+  },
+  {
+    "task_name": "p14",
+    "response": "{\"direct\":0,\"nested\":3}",
+    "position": 14,
+    "domain": "D10",
+    "arm": "work"
+  },
+  {
+    "task_name": "p15",
+    "response": "{\"direct\":1,\"nested\":8}",
+    "position": 15,
+    "domain": "D08",
+    "arm": "work"
+  },
+  {
+    "task_name": "p16",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 16,
+    "domain": "D08",
+    "arm": "control"
+  },
+  {
+    "task_name": "p17",
+    "response": "{\"direct\":2,\"nested\":4}",
+    "position": 17,
+    "domain": "D07",
+    "arm": "work"
+  },
+  {
+    "task_name": "p18",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 18,
+    "domain": "D07",
+    "arm": "control"
+  },
+  {
+    "task_name": "p19",
+    "response": "{\"direct\":7,\"nested\":2}",
+    "position": 19,
+    "domain": "D04",
+    "arm": "work"
+  },
+  {
+    "task_name": "p20",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 20,
+    "domain": "D04",
+    "arm": "control"
+  },
+  {
+    "task_name": "p21",
+    "response": "{\"direct\":9,\"nested\":0}",
+    "actual_prompt": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: gemehipa\nParameters: a =  5; b =  4; c =  0.\nDefinition: gemehipa(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: gemehipa( 0,  5)\nNested: gemehipa(gemehipa( 1,10),  7)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+    "prompt_deviation": "One space after the comma before operand 10 was omitted in manual dispatch. All other content and semantic inputs unchanged; invocation was not repeated.",
+    "position": 21,
+    "domain": "D06",
+    "arm": "work"
+  },
+  {
+    "task_name": "p22",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 22,
+    "domain": "D06",
+    "arm": "control"
+  },
+  {
+    "task_name": "p23",
+    "response": "{\"direct\":5,\"nested\":5}",
+    "position": 23,
+    "domain": "D11",
+    "arm": "control"
+  },
+  {
+    "task_name": "p24",
+    "response": "{\"direct\":9,\"nested\":10}",
+    "position": 24,
+    "domain": "D11",
+    "arm": "work"
+  }
+]

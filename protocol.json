@@ -1,0 +1,625 @@
+{
+  "title": "Ammons encounter-time LLM pilot",
+  "prepared_utc": "2026-11-12T17:56:24.450656+00:00",
+  "seed": "237774984344699965444366984236259833562",
+  "version": 1,
+  "state": "PREDEFINED_BEFORE_FIRST_MODEL_CALL",
+  "n_domain_pairs": 12,
+  "n_contexts": 24,
+  "responses_per_context": 2,
+  "unit_of_analysis": "domain pair",
+  "mode": "encounter-time; no parameter updates",
+  "model_identity": "inherited collaboration-agent runtime; no model override; exact backend release, temperature and provider seed not exposed",
+  "intervention": "target rule versus independent rule for a different name; same format and character count",
+  "endpoint": "domain mean correctness across direct and nested query",
+  "randomization": "pair order and within-pair arm order randomized before all calls",
+  "tests": [
+    "paired-label sign-flip exact randomization of domain score differences, directional and two-sided",
+    "exact paired discordance sign test for positive versus negative nonzero domain differences"
+  ],
+  "scope": "newly generated synthetic function-instance uptake; no original source equations and no training or universal scarcity claim",
+  "problems": [
+    {
+      "id": "D01",
+      "target": "lenetido",
+      "foil": "zijozilo",
+      "target_coefficients": [
+        2,
+        1,
+        3
+      ],
+      "foil_coefficients": [
+        10,
+        2,
+        4
+      ],
+      "queries": {
+        "direct": [
+          2,
+          4
+        ],
+        "nested": [
+          5,
+          0,
+          7
+        ]
+      },
+      "expected": {
+        "direct": 0,
+        "nested": 3
+      },
+      "arm_order": [
+        "work",
+        "control"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: lenetido\nParameters: a =  2; b =  1; c =  3.\nDefinition: lenetido(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: lenetido( 2,  4)\nNested: lenetido(lenetido( 5,  0),  7)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: zijozilo\nParameters: a = 10; b =  2; c =  4.\nDefinition: zijozilo(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: lenetido( 2,  4)\nNested: lenetido(lenetido( 5,  0),  7)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D02",
+      "target": "bozorima",
+      "foil": "sufonafa",
+      "target_coefficients": [
+        2,
+        5,
+        0
+      ],
+      "foil_coefficients": [
+        7,
+        10,
+        2
+      ],
+      "queries": {
+        "direct": [
+          0,
+          6
+        ],
+        "nested": [
+          8,
+          10,
+          2
+        ]
+      },
+      "expected": {
+        "direct": 8,
+        "nested": 10
+      },
+      "arm_order": [
+        "control",
+        "work"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: bozorima\nParameters: a =  2; b =  5; c =  0.\nDefinition: bozorima(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: bozorima( 0,  6)\nNested: bozorima(bozorima( 8, 10),  2)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: sufonafa\nParameters: a =  7; b = 10; c =  2.\nDefinition: sufonafa(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: bozorima( 0,  6)\nNested: bozorima(bozorima( 8, 10),  2)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D03",
+      "target": "zobadiji",
+      "foil": "picaceti",
+      "target_coefficients": [
+        6,
+        1,
+        4
+      ],
+      "foil_coefficients": [
+        7,
+        8,
+        7
+      ],
+      "queries": {
+        "direct": [
+          2,
+          9
+        ],
+        "nested": [
+          5,
+          2,
+          6
+        ]
+      },
+      "expected": {
+        "direct": 3,
+        "nested": 6
+      },
+      "arm_order": [
+        "work",
+        "control"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: zobadiji\nParameters: a =  6; b =  1; c =  4.\nDefinition: zobadiji(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: zobadiji( 2,  9)\nNested: zobadiji(zobadiji( 5,  2),  6)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: picaceti\nParameters: a =  7; b =  8; c =  7.\nDefinition: picaceti(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: zobadiji( 2,  9)\nNested: zobadiji(zobadiji( 5,  2),  6)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D04",
+      "target": "kamonihe",
+      "foil": "zuluvizu",
+      "target_coefficients": [
+        3,
+        7,
+        0
+      ],
+      "foil_coefficients": [
+        10,
+        6,
+        5
+      ],
+      "queries": {
+        "direct": [
+          2,
+          8
+        ],
+        "nested": [
+          7,
+          1,
+          4
+        ]
+      },
+      "expected": {
+        "direct": 7,
+        "nested": 2
+      },
+      "arm_order": [
+        "work",
+        "control"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: kamonihe\nParameters: a =  3; b =  7; c =  0.\nDefinition: kamonihe(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: kamonihe( 2,  8)\nNested: kamonihe(kamonihe( 7,  1),  4)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: zuluvizu\nParameters: a = 10; b =  6; c =  5.\nDefinition: zuluvizu(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: kamonihe( 2,  8)\nNested: kamonihe(kamonihe( 7,  1),  4)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D05",
+      "target": "nacuvibi",
+      "foil": "womocidi",
+      "target_coefficients": [
+        6,
+        9,
+        10
+      ],
+      "foil_coefficients": [
+        10,
+        1,
+        8
+      ],
+      "queries": {
+        "direct": [
+          5,
+          10
+        ],
+        "nested": [
+          6,
+          9,
+          1
+        ]
+      },
+      "expected": {
+        "direct": 9,
+        "nested": 0
+      },
+      "arm_order": [
+        "control",
+        "work"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: nacuvibi\nParameters: a =  6; b =  9; c = 10.\nDefinition: nacuvibi(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: nacuvibi( 5, 10)\nNested: nacuvibi(nacuvibi( 6,  9),  1)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: womocidi\nParameters: a = 10; b =  1; c =  8.\nDefinition: womocidi(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: nacuvibi( 5, 10)\nNested: nacuvibi(nacuvibi( 6,  9),  1)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D06",
+      "target": "gemehipa",
+      "foil": "vedogemu",
+      "target_coefficients": [
+        5,
+        4,
+        0
+      ],
+      "foil_coefficients": [
+        6,
+        10,
+        8
+      ],
+      "queries": {
+        "direct": [
+          0,
+          5
+        ],
+        "nested": [
+          1,
+          10,
+          7
+        ]
+      },
+      "expected": {
+        "direct": 9,
+        "nested": 0
+      },
+      "arm_order": [
+        "work",
+        "control"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: gemehipa\nParameters: a =  5; b =  4; c =  0.\nDefinition: gemehipa(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: gemehipa( 0,  5)\nNested: gemehipa(gemehipa( 1, 10),  7)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: vedogemu\nParameters: a =  6; b = 10; c =  8.\nDefinition: vedogemu(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: gemehipa( 0,  5)\nNested: gemehipa(gemehipa( 1, 10),  7)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D07",
+      "target": "gimupapi",
+      "foil": "hunehiza",
+      "target_coefficients": [
+        9,
+        2,
+        5
+      ],
+      "foil_coefficients": [
+        4,
+        9,
+        1
+      ],
+      "queries": {
+        "direct": [
+          5,
+          9
+        ],
+        "nested": [
+          3,
+          8,
+          9
+        ]
+      },
+      "expected": {
+        "direct": 2,
+        "nested": 4
+      },
+      "arm_order": [
+        "work",
+        "control"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: gimupapi\nParameters: a =  9; b =  2; c =  5.\nDefinition: gimupapi(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: gimupapi( 5,  9)\nNested: gimupapi(gimupapi( 3,  8),  9)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: hunehiza\nParameters: a =  4; b =  9; c =  1.\nDefinition: hunehiza(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: gimupapi( 5,  9)\nNested: gimupapi(gimupapi( 3,  8),  9)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D08",
+      "target": "focugeve",
+      "foil": "mezacolu",
+      "target_coefficients": [
+        8,
+        3,
+        7
+      ],
+      "foil_coefficients": [
+        5,
+        10,
+        9
+      ],
+      "queries": {
+        "direct": [
+          4,
+          2
+        ],
+        "nested": [
+          10,
+          5,
+          7
+        ]
+      },
+      "expected": {
+        "direct": 1,
+        "nested": 8
+      },
+      "arm_order": [
+        "work",
+        "control"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: focugeve\nParameters: a =  8; b =  3; c =  7.\nDefinition: focugeve(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: focugeve( 4,  2)\nNested: focugeve(focugeve(10,  5),  7)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: mezacolu\nParameters: a =  5; b = 10; c =  9.\nDefinition: mezacolu(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: focugeve( 4,  2)\nNested: focugeve(focugeve(10,  5),  7)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D09",
+      "target": "gokenoro",
+      "foil": "macocode",
+      "target_coefficients": [
+        1,
+        6,
+        10
+      ],
+      "foil_coefficients": [
+        9,
+        7,
+        1
+      ],
+      "queries": {
+        "direct": [
+          2,
+          6
+        ],
+        "nested": [
+          6,
+          3,
+          3
+        ]
+      },
+      "expected": {
+        "direct": 4,
+        "nested": 7
+      },
+      "arm_order": [
+        "control",
+        "work"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: gokenoro\nParameters: a =  1; b =  6; c = 10.\nDefinition: gokenoro(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: gokenoro( 2,  6)\nNested: gokenoro(gokenoro( 6,  3),  3)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: macocode\nParameters: a =  9; b =  7; c =  1.\nDefinition: macocode(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: gokenoro( 2,  6)\nNested: gokenoro(gokenoro( 6,  3),  3)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D10",
+      "target": "zatusewa",
+      "foil": "huzodobi",
+      "target_coefficients": [
+        9,
+        2,
+        7
+      ],
+      "foil_coefficients": [
+        1,
+        10,
+        3
+      ],
+      "queries": {
+        "direct": [
+          3,
+          5
+        ],
+        "nested": [
+          10,
+          9,
+          3
+        ]
+      },
+      "expected": {
+        "direct": 0,
+        "nested": 3
+      },
+      "arm_order": [
+        "control",
+        "work"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: zatusewa\nParameters: a =  9; b =  2; c =  7.\nDefinition: zatusewa(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: zatusewa( 3,  5)\nNested: zatusewa(zatusewa(10,  9),  3)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: huzodobi\nParameters: a =  1; b = 10; c =  3.\nDefinition: huzodobi(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: zatusewa( 3,  5)\nNested: zatusewa(zatusewa(10,  9),  3)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D11",
+      "target": "zujacunu",
+      "foil": "gahugica",
+      "target_coefficients": [
+        10,
+        4,
+        3
+      ],
+      "foil_coefficients": [
+        5,
+        3,
+        3
+      ],
+      "queries": {
+        "direct": [
+          8,
+          9
+        ],
+        "nested": [
+          3,
+          0,
+          10
+        ]
+      },
+      "expected": {
+        "direct": 9,
+        "nested": 10
+      },
+      "arm_order": [
+        "control",
+        "work"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: zujacunu\nParameters: a = 10; b =  4; c =  3.\nDefinition: zujacunu(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: zujacunu( 8,  9)\nNested: zujacunu(zujacunu( 3,  0), 10)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: gahugica\nParameters: a =  5; b =  3; c =  3.\nDefinition: gahugica(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: zujacunu( 8,  9)\nNested: zujacunu(zujacunu( 3,  0), 10)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    },
+    {
+      "id": "D12",
+      "target": "putevowa",
+      "foil": "jelubedu",
+      "target_coefficients": [
+        8,
+        1,
+        5
+      ],
+      "foil_coefficients": [
+        2,
+        4,
+        10
+      ],
+      "queries": {
+        "direct": [
+          9,
+          0
+        ],
+        "nested": [
+          6,
+          8,
+          4
+        ]
+      },
+      "expected": {
+        "direct": 0,
+        "nested": 2
+      },
+      "arm_order": [
+        "control",
+        "work"
+      ],
+      "prompts": {
+        "work": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: putevowa\nParameters: a =  8; b =  1; c =  5.\nDefinition: putevowa(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: putevowa( 9,  0)\nNested: putevowa(putevowa( 6,  8),  4)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}.",
+        "control": "Answer using only this message. Do not call tools. Return one JSON object and no explanation.\n\nEach named binary operation acts on integers 0 through 10. The remainder convention is the least nonnegative residue modulo 11.\n\nDomain note:\nNamed operation: jelubedu\nParameters: a =  2; b =  4; c = 10.\nDefinition: jelubedu(u,v) is the remainder of a*u + b*v + c when divided by 11.\nRules are local to their exact operation name. A rule for one name does not define any other name.\n\nQuestions:\nDirect: putevowa( 9,  0)\nNested: putevowa(putevowa( 6,  8),  4)\n\nIf the requested operation is unspecified, give your best estimate anyway. Both answers must be integers from 0 through 10. Return exactly {\"direct\": integer, \"nested\": integer}."
+      }
+    }
+  ],
+  "execution_order": [
+    {
+      "position": 1,
+      "domain": "D01",
+      "arm": "work",
+      "task_name": "p01"
+    },
+    {
+      "position": 2,
+      "domain": "D01",
+      "arm": "control",
+      "task_name": "p02"
+    },
+    {
+      "position": 3,
+      "domain": "D02",
+      "arm": "control",
+      "task_name": "p03"
+    },
+    {
+      "position": 4,
+      "domain": "D02",
+      "arm": "work",
+      "task_name": "p04"
+    },
+    {
+      "position": 5,
+      "domain": "D05",
+      "arm": "control",
+      "task_name": "p05"
+    },
+    {
+      "position": 6,
+      "domain": "D05",
+      "arm": "work",
+      "task_name": "p06"
+    },
+    {
+      "position": 7,
+      "domain": "D03",
+      "arm": "work",
+      "task_name": "p07"
+    },
+    {
+      "position": 8,
+      "domain": "D03",
+      "arm": "control",
+      "task_name": "p08"
+    },
+    {
+      "position": 9,
+      "domain": "D12",
+      "arm": "control",
+      "task_name": "p09"
+    },
+    {
+      "position": 10,
+      "domain": "D12",
+      "arm": "work",
+      "task_name": "p10"
+    },
+    {
+      "position": 11,
+      "domain": "D09",
+      "arm": "control",
+      "task_name": "p11"
+    },
+    {
+      "position": 12,
+      "domain": "D09",
+      "arm": "work",
+      "task_name": "p12"
+    },
+    {
+      "position": 13,
+      "domain": "D10",
+      "arm": "control",
+      "task_name": "p13"
+    },
+    {
+      "position": 14,
+      "domain": "D10",
+      "arm": "work",
+      "task_name": "p14"
+    },
+    {
+      "position": 15,
+      "domain": "D08",
+      "arm": "work",
+      "task_name": "p15"
+    },
+    {
+      "position": 16,
+      "domain": "D08",
+      "arm": "control",
+      "task_name": "p16"
+    },
+    {
+      "position": 17,
+      "domain": "D07",
+      "arm": "work",
+      "task_name": "p17"
+    },
+    {
+      "position": 18,
+      "domain": "D07",
+      "arm": "control",
+      "task_name": "p18"
+    },
+    {
+      "position": 19,
+      "domain": "D04",
+      "arm": "work",
+      "task_name": "p19"
+    },
+    {
+      "position": 20,
+      "domain": "D04",
+      "arm": "control",
+      "task_name": "p20"
+    },
+    {
+      "position": 21,
+      "domain": "D06",
+      "arm": "work",
+      "task_name": "p21"
+    },
+    {
+      "position": 22,
+      "domain": "D06",
+      "arm": "control",
+      "task_name": "p22"
+    },
+    {
+      "position": 23,
+      "domain": "D11",
+      "arm": "control",
+      "task_name": "p23"
+    },
+    {
+      "position": 24,
+      "domain": "D11",
+      "arm": "work",
+      "task_name": "p24"
+    }
+  ]
+}
