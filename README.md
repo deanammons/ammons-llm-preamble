@@ -10,7 +10,7 @@ This repository contains my research preprint, its editable source, and the repr
 
 Read the paper: [Ammons LLM Preamble](./Ammons_LLM_Preamble.pdf) [Ammons LLM Preamble External 10.5281/zenodo.24177478](https://zenodo.org/records/24177478)
 
-Inspect the reproduction material: [source directory](./source/)
+Inspect the reproduction material: [source directory](https://github.com/deanammons/ammons-llm-preamble/tree/main)
 
 An archival publication link will be added here after the scientific record is public.
 
